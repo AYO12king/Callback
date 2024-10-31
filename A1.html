@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <haed><title>Javascript</title></haed>
+    <body>
+        <h2>Convert a Javascript object to a JSON string, send it to the server.</h2>
+        <p id="result"></p>
+        <script>
+            var myOBJ = { name: "Riya", age: 15, Grade: 7 };
+            var myJSON = JSON.stringify(myOBJ);
+            var newOBJ = JSON.parse(myJSON);
+            document.getElementById("result").innerHTML = newOBJ.name;
+        </script>
+
+    </body>
+</html>
